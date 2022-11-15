@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom';
+
 import { useScrollPosition } from '@/hooks';
 
 export const NavBar: React.FC = () => {
@@ -22,25 +24,19 @@ export const NavBar: React.FC = () => {
       </button>
       <div className="collapse navbar-collapse" id="navLinks">
         <ul className="navbar-nav">
-          <li className="nav-item">
-            <a aria-current="page" className="nav-link active" href="">
-              HOME
-            </a>
-          </li>
+          <NavLink className="nav-item nav-link" to="/">
+            HOME
+          </NavLink>
         </ul>
         <ul className="navbar-nav">
-          <li className="nav-item">
-            <a className="nav-link" href="">
-              ABOUT
-            </a>
-          </li>
+          <NavLink className="nav-item nav-link" to="/about">
+            ABOUT
+          </NavLink>
         </ul>
         <ul className="navbar-nav">
-          <li className="nav-item">
-            <a className="nav-link" href="/suscription">
-              JOIN US
-            </a>
-          </li>
+          <NavLink className="nav-item nav-link" to="/subscription">
+            JOIN US
+          </NavLink>
         </ul>
       </div>
     </nav>
