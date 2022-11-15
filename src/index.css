@@ -1,0 +1,24 @@
+/* ids */
+#mainNavBar {
+  font-size: 1.5rem;
+  font-weight: 100;
+  padding: 0 16px;
+}
+
+#mainNavBar .navbar-brand {
+  color: #ffb703;
+  font-weight: 500;
+}
+
+#mainNavBar .nav-link {
+  color: white;
+}
+
+#mainNavBar .nav-link:hover {
+  color: #ffb703;
+}
+
+.navbar.scrolled {
+  background: #00a6fb;
+  transition: background 500ms;
+}
