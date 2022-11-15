@@ -1,8 +1,9 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 
 import { NavBar } from '@/ui/components';
-import Subscription from '@/pages/Subscription';
 import Home from '@/pages/Home';
+import About from '@/pages/About';
+import Subscription from '@/pages/Subscription';
 
 const AppRouter: React.FC = () => {
   return (
@@ -11,7 +12,11 @@ const AppRouter: React.FC = () => {
 
       <Routes>
         <Route element={<Home />} path="/" />
-        <Route element={<Subscription />} path="/suscription" />
+        <Route element={<About />} path="/about" />
+        <Route element={<Subscription />} path="/subscription" />
+
+        {/* if a non existing route is requested will redirect to Home */}
+        <Route element={<Navigate to="/" />} path="/*" />
       </Routes>
     </>
   );
