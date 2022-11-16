@@ -1,0 +1,21 @@
+.headingGroup .span {
+  color: #0582ca;
+}
+
+.headingGroup .h1 {
+  color: white;
+  font-weight: 100;
+  font-size: 3.5rem;
+}
+
+/* Responsive Heading */
+@media (max-width: 1500px) {
+  .headingGroup .h1 {
+    font-size: 2.8rem;
+  }
+}
+@media (max-width: 1200px) {
+  .headingGroup .h1 {
+    font-size: 2.3rem;
+  }
+}
