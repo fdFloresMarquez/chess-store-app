@@ -6,9 +6,9 @@ const About: React.FC = () => {
       <div className={styles.stack}>
         <h1 className={styles.heading}>About Us</h1>
         <p className={styles.paragraph}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dignissimos vitae,
-          provident doloremque eius expedita iure magnam at deleniti repellendus minus unde iste,
-          tempore fugit optio officia dicta error praesentium!
+          Chess is everything: art, science and sport. It is deeply rooted in our global culture.
+          Accessible to all; a metaphor for strategic thinking; and a model of civilized conflict
+          resolution. We work hard to provide the best user experience.
         </p>
       </div>
       <img alt="" className={styles.image} src="/assets/about.jpg" />
