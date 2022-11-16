@@ -4,6 +4,11 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
+.navbar.scrolled {
+  background: #00a6fb;
+  transition: background 500ms;
+}
+
 /* ids */
 #mainNavBar {
   font-size: 1.5rem;
@@ -24,7 +29,6 @@ body {
   color: #ffb703;
 }
 
-.navbar.scrolled {
-  background: #00a6fb;
-  transition: background 500ms;
-}
+
+
+
